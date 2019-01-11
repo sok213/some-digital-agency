@@ -3,6 +3,7 @@ import './App.css';
 import Jumbotron from './components/Jumbotron/Jumbotron';
 import NavBar from './components/NavBar/NavBar';
 import ActiveSection from './components/ActiveSection/ActiveSection';
+import Footer from './components/Footer/Footer';
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
         <Jumbotron />
         <NavBar />
         <ActiveSection />
+        <Footer />
       </div>
     );
   }
