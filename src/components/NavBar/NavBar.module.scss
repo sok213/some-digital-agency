@@ -8,7 +8,7 @@
 .navBarContainer {
 	background-color: white;
 	z-index: 1;
-	opacity: 0.6;
+	transition: 0.5s;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -21,8 +21,11 @@
 .mainNav a {
 	color: #34495e;
 	margin: 0px 10px;
-	font-size: .99em;
+	font-size: 15px;
+	letter-spacing: 2.5px;
 	text-decoration: none;
+	font-family: 'Heebo', sans-serif;
+	text-transform: uppercase;
 }
 
 .mainNav a:hover {

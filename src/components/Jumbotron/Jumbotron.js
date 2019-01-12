@@ -15,7 +15,7 @@ class Jumbotron extends Component {
                     </div>
                 </div>
 
-                <Particles />
+                {/* <Particles /> */}
             </div>
         );
     }

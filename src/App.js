@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer';
 import Purpose from './components/Purpose/Purpose';
 import Expertise from './components/Expertise/Expertise';
 import HeadQuarters from './components/HeadQuarters/HeadQuarters';
+import * as Scroll from 'react-scroll';
 
 class App extends Component {
 	render() {
