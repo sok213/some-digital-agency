@@ -16,8 +16,9 @@ class Jumbotron extends Component {
                         <button className={s.discoverCta}>Discover</button>
                     </div>
                 </div>
-
-                {/* <Particles style={{ border: "thin solid red" }} /> */}
+                <div className={s.particlesContainer}>
+                    <Particles />
+                </div>
             </div>
         );
     }
