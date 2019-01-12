@@ -38,12 +38,12 @@ class Purpose extends Component {
     render() {
         return (
             <div className={s.purposeContainer}>
-                    <Animated 
-                        animationIn="fadeIn" 
-                        style={{ display: this.state.isHeaderVisible ? 'block' : 'none' }}
-                    >
-                        <Header title="Purpose" />
-                    </Animated>
+                <Animated 
+                    animationIn="fadeIn" 
+                    style={{ display: this.state.isHeaderVisible ? 'block' : 'none' }}
+                >
+                    <Header title="What We Are About" />
+                </Animated>
                 <div className={s.row}>
                     {/* Image */}
                     <div 

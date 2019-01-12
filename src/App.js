@@ -37,8 +37,8 @@ class App extends Component {
 				<Jumbotron />
 				<div className={s.container}>
 					<Purpose />
-					<Talent amountScrolled={this.state.amountScrolled}/>
 				</div>
+				<Talent amountScrolled={this.state.amountScrolled}/>
 			</div>
 		);
 	}

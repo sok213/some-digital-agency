@@ -15,6 +15,7 @@
     align-content: stretch;
     height: 100%;
     min-height: 400px;
+    margin-top: 20px;
 
     @media screen and (max-width: 666px) {
         flex-direction: column;
