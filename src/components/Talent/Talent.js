@@ -18,6 +18,7 @@ class Talent extends Component {
         this.state = {
             isHeaderVisible: false,
             isContentVisible: false,
+            isTalentVisible: false,
             talents: [
                 {
                     title: 'Innovate',
@@ -64,6 +65,10 @@ class Talent extends Component {
             this.setState({ isContentVisible: true });
         }
 
+        if(this.props.amountScrolled > 1070 && !this.state.isTalentVisible) {
+            this.setState({ isTalentVisible: true });
+        }
+
         console.log('Bleh: ', this.props.amountScrolled);
     }
 
@@ -76,15 +81,20 @@ class Talent extends Component {
             color } = item;
 
         return (
-            <div className={s.talentItem} style={{ backgroundColor, color }}>
-                <div className={s.talentItemContent}>
-                    <div className={s.iconContainer}>
-                        <FontAwesomeIcon icon={icon} />
+            <Animated
+                animationIn="fadeIn" 
+                style={{ display: this.state.isTalentVisible ? 'flex' : 'none' }}
+            >
+                <div className={s.talentItem} style={{ backgroundColor, color }}>
+                    <div className={s.talentItemContent}>
+                        <div className={s.iconContainer}>
+                            <FontAwesomeIcon icon={icon} />
+                        </div>
+                        <h4 className={s.talentTitle}>{item.title}</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dis parturient montes nascetur.</p>
                     </div>
-                    <h4 className={s.talentTitle}>{item.title}</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dis parturient montes nascetur.</p>
                 </div>
-            </div>
+            </Animated>
         );
     }
 
@@ -93,21 +103,23 @@ class Talent extends Component {
 
         return (
             <div className={s.talentContainer}>
-                <Animated
-                    animationIn="fadeInDown" 
-                    style={{ display: this.state.isHeaderVisible ? 'block' : 'none' }}
-                >
-                    <Header title="Made with heart" />
-                </Animated>
-                <div className={s.primaryTextContainer}>
+                <div className={s.headerContainer}>
                     <Animated
-                        animationIn="fadeInUp" 
-                        style={{ display: this.state.isContentVisible ? 'block' : 'none' }}
+                        animationIn="fadeInDown" 
+                        style={{ display: this.state.isHeaderVisible ? 'block' : 'none' }}
                     >
-                        <div className={s.primaryTextContent}>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dis parturient montes nascetur ridiculus. Ultrices mi tempus imperdiet nulla. Mi in nulla posuere sollicitudin.</p>
-                        </div>
+                        <Header title="Made with heart" />
                     </Animated>
+                    <div className={s.primaryTextContainer}>
+                        <Animated
+                            animationIn="fadeInUp" 
+                            style={{ display: this.state.isContentVisible ? 'block' : 'none' }}
+                        >
+                            <div className={s.primaryTextContent}>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dis parturient montes nascetur ridiculus. Ultrices mi tempus imperdiet nulla. Mi in nulla posuere sollicitudin.</p>
+                            </div>
+                        </Animated>
+                    </div>
                 </div>
                 <div className={s.talentGridContainer}>
                     {this.state.talents.map(item => this.renderTalentItem(item))}
