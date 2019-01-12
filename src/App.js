@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import './App.css';
+import s from './App.module.scss';
 import Jumbotron from './components/Jumbotron/Jumbotron';
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
-import OurStory from './components/OurStory/OurStory';
+import Purpose from './components/Purpose/Purpose';
 import Expertise from './components/Expertise/Expertise';
 import HeadQuarters from './components/HeadQuarters/HeadQuarters';
-import Testimonials from './components/Testimonials/Testimonials';
 
 class App extends Component {
 	render() {
@@ -14,10 +13,12 @@ class App extends Component {
 			<div className="App">
 				<NavBar />
 				<Jumbotron />
-				<OurStory />
-				<Expertise />
-				<Footer />
-				<HeadQuarters />
+				<div className={s.container}>
+					<Purpose />
+					{/* <Expertise />
+					<Footer />
+					<HeadQuarters /> */}
+				</div>
 			</div>
 		);
 	}

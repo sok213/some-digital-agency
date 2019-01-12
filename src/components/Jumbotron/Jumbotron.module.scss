@@ -2,3 +2,22 @@
     background-color: grey;
     height: 80vh;
 }
+
+.headerContainer {
+    position: absolute;
+    width: 100%;
+    margin-top: 160px;
+    margin-bottom: -80px;
+    text-align: center;
+}
+
+.headerContent {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 24px;
+}
+
+canvas {
+    height: 80vh !important;
+}   

@@ -5,7 +5,12 @@ class NavBar extends Component {
     render() {
         return (
             <div className={s.navBarContainer}>
-                Navbar
+                <ul class={s.mainNav}>
+                    <li><a href="#">Purpose</a></li>
+                    <li><a href="#">Talent</a></li>
+                    <li><a href="#">Impact</a></li>
+                    <li><a href="#">HQ</a></li>
+                </ul>
             </div>
         );
     }
