@@ -1,22 +1,54 @@
 .jumbotronContainer {
     background-color: #180F3D;
-    height: 80vh;
+    height: 100vh;
+    display:flex;
     color: white;
 }
 
+.discoverCta {
+    padding: 15px 0px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    margin-top: 20px;
+    border: 1px solid white;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    transition: 0.3s;
+    font-size: 14px;
+
+    &:hover {
+        background-color: white;
+        color: black;
+    }
+}
+
 .headerContainer {
-    position: absolute;
+    display: flex;
+    position: relative;
+    align-items: center;
     width: 100%;
-    margin-top: 160px;
-    margin-bottom: -80px;
     text-align: center;
+    height: auto;
 }
 
 .headerContent {
+    display: flex;
+    flex-direction: column;
+    height: auto;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     padding: 0px 24px;
+
+    h1 {
+        letter-spacing: 2px;
+    }
+
+    p {
+        font-family: 'Thasadith', sans-serif;
+    }
 }
 
 canvas {
