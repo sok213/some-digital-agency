@@ -23,8 +23,6 @@ class NavBar extends Component {
     }
 
     render() {
-        console.log(this.state.amountScrolled)
-
         return (
             <div 
                 className={`
