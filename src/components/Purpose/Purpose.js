@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import s from './Purpose.module.scss';
-import ImpactPhoto from './../../assets/impact.jpg';
+import ImpactPhoto from './../../assets/hipsters.jpg';
 
 class Purpose extends Component {
     render() {
