@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import s from './Purpose.module.scss';
 import ImpactPhoto from './../../assets/hipsters.jpg';
 import { Animated } from 'react-animated-css';
+import Header from './../Header/Header';
 
 class Purpose extends Component {
     constructor() {
@@ -34,12 +35,7 @@ class Purpose extends Component {
         return (
             <div className={s.purposeContainer}>
                 {/* Header */}
-                <div className={s.headerContainer}>
-                    <div className={s.headerContent}>
-                        <h2>PURPOSE</h2>
-                        <div className={s.underline}></div>
-                    </div>
-                </div>
+                <Header title="Purpose" />
 
                 <div className={s.row}>
                     {/* Image */}

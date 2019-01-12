@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import s from './App.module.scss';
 import Jumbotron from './components/Jumbotron/Jumbotron';
 import NavBar from './components/NavBar/NavBar';
+import Talent from './components/Talent/Talent';
 import Footer from './components/Footer/Footer';
 import Purpose from './components/Purpose/Purpose';
 import Expertise from './components/Expertise/Expertise';
@@ -16,9 +17,11 @@ class App extends Component {
 				<Jumbotron />
 				<div className={s.container}>
 					<Purpose />
-					{/* <Expertise />
-					<Footer />
-					<HeadQuarters /> */}
+					<Talent />
+					{/*
+						<Footer />
+						<HeadQuarters /> 
+					*/}
 				</div>
 			</div>
 		);
