@@ -1,3 +1,15 @@
+.fadeIn {
+    -webkit-animation: fadein 0.3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 0.3s; /* Firefox < 16 */
+        -ms-animation: fadein 0.3s; /* Internet Explorer */
+         -o-animation: fadein 0.3s; /* Opera < 12.1 */
+            animation: fadein 0.3s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
 .mainNav {
 	display: flex;
@@ -6,6 +18,7 @@
 }
 
 .navBarContainer {
+	@extend .fadeIn;
 	z-index: 2;
 	transition: 0.5s;
 	display: flex;
