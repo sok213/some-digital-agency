@@ -31,7 +31,9 @@
 
 .imageContainer {
     width: 50%;
-    padding: 10px 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
 
     @media screen and (max-width: 666px) {
         width: 100%;
