@@ -10,6 +10,26 @@ import HeadQuarters from './components/HeadQuarters/HeadQuarters';
 import * as Scroll from 'react-scroll';
 
 class App extends Component {
+	constructor() {
+        super();
+
+        this.state = {
+            amountScrolled: window.pageYOffset
+        }
+    }
+
+	componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll, { passive: true });
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll = () => {
+        this.setState({ amountScrolled: window.pageYOffset });
+    }
+    
 	render() {
 		return (
 			<div className="App">
@@ -17,11 +37,7 @@ class App extends Component {
 				<Jumbotron />
 				<div className={s.container}>
 					<Purpose />
-					<Talent />
-					{/*
-						<Footer />
-						<HeadQuarters /> 
-					*/}
+					<Talent amountScrolled={this.state.amountScrolled}/>
 				</div>
 			</div>
 		);

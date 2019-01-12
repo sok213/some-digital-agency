@@ -1,5 +1,7 @@
 @import './../../utils/styles/common.module.scss';
 
 .talentContainer {
-    // border: thin solid red;
+    border: thin solid red;
+    height: 100%;
+    min-height: 400px;
 }

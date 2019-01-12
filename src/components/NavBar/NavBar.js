@@ -30,7 +30,7 @@ class NavBar extends Component {
                     ${this.state.amountScrolled > 120 ? s.active : s.nonActive }    
                 `} 
             >
-                <ul class={s.mainNav}>
+                <ul className={s.mainNav}>
                     <li><a href="#">Purpose</a></li>
                     <li><a href="#">Talent</a></li>
                     <li><a href="#">Impact</a></li>

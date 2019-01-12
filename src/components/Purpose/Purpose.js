@@ -9,7 +9,8 @@ class Purpose extends Component {
         super();
 
         this.state = {
-            isVisible: false,
+            isHeaderVisible: false,
+            isContentVisible: false,
             amountScrolled: window.pageYOffset
         }
     }
@@ -25,23 +26,29 @@ class Purpose extends Component {
     handleScroll = () => {
         this.setState({ amountScrolled: window.pageYOffset });
 
-        if(this.state.amountScrolled > 470) {
-            this.setState({ isVisible: true });
+        if(this.state.amountScrolled > 400) {
+            this.setState({ isHeaderVisible: true });
+        }
+
+        if(this.state.amountScrolled > 420) {
+            this.setState({ isContentVisible: true });
         }
     }
     
     render() {
-        console.log(this.state.amountScrolled)
         return (
             <div className={s.purposeContainer}>
-                {/* Header */}
-                <Header title="Purpose" />
-
+                    <Animated 
+                        animationIn="fadeIn" 
+                        style={{ display: this.state.isHeaderVisible ? 'block' : 'none' }}
+                    >
+                        <Header title="Purpose" />
+                    </Animated>
                 <div className={s.row}>
                     {/* Image */}
                     <div 
                         className={s.imageContainer} 
-                        style={{ display: this.state.isVisible ? 'flex' : 'none' }}
+                        style={{ display: this.state.isContentVisible ? 'flex' : 'none' }}
                     >
                         <Animated animationIn="fadeInLeft">
                             <div className={s.imageContent}>
@@ -56,7 +63,7 @@ class Purpose extends Component {
                     {/* Description */}
                     <div 
                         className={s.descContainer}
-                        style={{ display: this.state.isVisible ? 'flex' : 'none' }}    
+                        style={{ display: this.state.isContentVisible ? 'flex' : 'none' }}    
                     >
                         <Animated animationIn="fadeInRight">
                             <div className={s.descContent}>
