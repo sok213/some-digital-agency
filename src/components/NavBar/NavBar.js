@@ -27,8 +27,10 @@ class NavBar extends Component {
 
         return (
             <div 
-                className={s.navBarContainer}
-                style={{ opacity: this.state.amountScrolled > 124 ? 1 : 0.5 }}    
+                className={`
+                    ${s.navBarContainer}
+                    ${this.state.amountScrolled > 120 ? s.active : s.nonActive }    
+                `} 
             >
                 <ul class={s.mainNav}>
                     <li><a href="#">Purpose</a></li>

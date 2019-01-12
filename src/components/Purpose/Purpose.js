@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import s from './Purpose.module.scss';
+import ImpactPhoto from './../../assets/impact.jpg';
 
 class Purpose extends Component {
     render() {
@@ -8,9 +9,9 @@ class Purpose extends Component {
                 {/* Header */}
                 <div className={s.headerContainer}>
                     <div className={s.headerContent}>
-                        <h2>Mission</h2>
+                        <h2>PURPOSE</h2>
                         <div className={s.underline}></div>
-                        <h3>Our Mission Is to Impact</h3>
+                        <h3>Our purpose to <span style={{ fontStyle: "italic" }}>impact</span></h3>
                     </div>
                 </div>
 
@@ -18,7 +19,11 @@ class Purpose extends Component {
                     {/* Image */}
                     <div className={s.imageContainer}>
                         <div className={s.imageContent}>
-                            <p>Image Container</p>
+                            <img 
+                                src={ImpactPhoto} 
+                                alt="People jumping in air" 
+                                className={s.image}
+                            />
                         </div>
                     </div>
                     {/* Description */}

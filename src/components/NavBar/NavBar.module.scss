@@ -6,7 +6,6 @@
 }
 
 .navBarContainer {
-	background-color: white;
 	z-index: 1;
 	transition: 0.5s;
 	display: flex;
@@ -19,15 +18,27 @@
 }
 
 .mainNav a {
-	color: #34495e;
+	transition: 0.5s;
 	margin: 0px 10px;
 	font-size: 15px;
 	letter-spacing: 2.5px;
 	text-decoration: none;
 	font-family: 'Heebo', sans-serif;
 	text-transform: uppercase;
+	color: white;
 }
 
 .mainNav a:hover {
 	color: #718daa;
+}
+
+.nonActive {
+	background-color: rgba(0,0,0,0);
+}
+
+.active {
+	background-color: white;
+	a {
+		color: black !important;
+	}
 }
