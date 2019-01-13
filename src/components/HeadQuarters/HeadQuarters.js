@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import s from './HeadQuarters.module.scss';
 import Header from './../Header/Header';
+import losAngeles from './../../assets/losangeles.jpg';
+import lasVegas from './../../assets/vegas.jpg';
+import newYork from './../../assets/newyork.jpg';
 
 class HeadQuarters extends Component {
     constructor() {
@@ -9,15 +12,15 @@ class HeadQuarters extends Component {
             cities: [
                 {
                     location: "Los Angeles",
-                    img: "#"
+                    img: losAngeles
                 },
                 {
                     location: "Las Vegas",
-                    img: "#"
+                    img: lasVegas
                 },
                 {
                     location: "New York",
-                    img: "#"
+                    img: newYork
                 }
             ]
         }
@@ -26,7 +29,10 @@ class HeadQuarters extends Component {
     renderCityItems = () => {
         return this.state.cities.map(({ location, img }) => {
             return (
-                <div className={s.cityItem}>
+                <div 
+                    className={s.cityItem} 
+                    style={{ backgroundImage: `url(${img})` }}
+                >
                     <p>{location}</p>
                 </div>
             );
@@ -34,9 +40,6 @@ class HeadQuarters extends Component {
     }
 
     render() {
-
-        
-
         return (
             <div className={s.hqContainer}>
                 <div className={s.innerContainer}>
