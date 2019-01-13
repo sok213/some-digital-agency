@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import s from './HeadQuarters.module.scss';
 import Header from './../Header/Header';
 import losAngeles from './../../assets/losangeles.jpg';
-import lasVegas from './../../assets/vegas.jpg';
+import sanFrancisco from './../../assets/sf.jpg';
 import newYork from './../../assets/newyork.jpg';
 
 class HeadQuarters extends Component {
@@ -15,8 +15,8 @@ class HeadQuarters extends Component {
                     img: losAngeles
                 },
                 {
-                    location: "Las Vegas",
-                    img: lasVegas
+                    location: "San Francisco",
+                    img: sanFrancisco
                 },
                 {
                     location: "New York",
