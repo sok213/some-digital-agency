@@ -43,6 +43,7 @@ class App extends Component {
 					<Testimonials amountScrolled={this.state.amountScrolled} />
 				</div>
 				<HeadQuarters amountScrolled={this.state.amountScrolled} />
+				<Footer />
 			</div>
 		);
 	}

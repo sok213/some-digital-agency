@@ -16,7 +16,11 @@
     align-items: center;
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: auto;
+
+    @media screen and (max-width: 794px) {
+        overflow-x: scroll; /* has to be scroll, not auto */
+        -webkit-overflow-scrolling: touch;
+    }
 }
 
 .cities {
