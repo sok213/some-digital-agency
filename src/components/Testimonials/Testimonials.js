@@ -3,6 +3,7 @@ import s from './Testimonials.module.scss';
 import Header from './../Header/Header';
 import { Animated } from 'react-animated-css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 class Testimonials extends Component {
     constructor() {
@@ -20,6 +21,14 @@ class Testimonials extends Component {
         }
     }
 
+    leftClick = () => {
+        console.log('Left click')
+    }
+
+    rightClick = () => {
+        console.log('Right click')
+    }
+
     render() {
         this.detectPageScroll();
 
@@ -35,7 +44,9 @@ class Testimonials extends Component {
                 {/* Carousel */}
                 <div className={s.carouselContainer}>
                     <div className={s.leftCta}>
-                        <a>Left</a>
+                        <button onClick={this.leftClick}>
+                            <FontAwesomeIcon icon={faChevronLeft} />
+                        </button>
                     </div>
                     <div className={s.center}>
                         <div className={s.centerContent}>
@@ -56,9 +67,11 @@ class Testimonials extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className={s.rightCta}>
-                        <div className={s.rightCtaContent}>
-                            <a>Right</a>
+                    <div className={s.rightCtaContainer}>
+                        <div className={s.rightCta}>
+                            <button onClick={this.rightClick}>
+                                <FontAwesomeIcon icon={faChevronRight} />
+                            </button>
                         </div>
                     </div>
                 </div>
