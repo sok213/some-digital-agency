@@ -33,7 +33,11 @@ class HeadQuarters extends Component {
                     className={s.cityItem} 
                     style={{ backgroundImage: `url(${img})` }}
                 >
-                    <p>{location}</p>
+                    <div 
+                        className={s.contentContainer}
+                    >
+                        <p>{location}</p>
+                    </div>
                 </div>
             );
         });
