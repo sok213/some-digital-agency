@@ -42,6 +42,7 @@ class App extends Component {
 				<div className={s.container}>
 					<Testimonials amountScrolled={this.state.amountScrolled} />
 				</div>
+				<HeadQuarters amountScrolled={this.state.amountScrolled} />
 			</div>
 		);
 	}
