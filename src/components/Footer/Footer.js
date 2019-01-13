@@ -6,12 +6,12 @@ class Footer extends Component {
         return (
             <div className={s.footerContainer}>
                 <div className={s.footerContent}>
-                    <h3>More</h3>
-                    <ul>
-                        <li>Portfolio</li>
-                        <li>LinkedIn</li>
-                        <li>Medium</li>
-                        <li>Mail </li>
+                    <h3>MORE</h3>
+                    <ul className={s.linksList}>
+                        <li><a href="#"><p>Portfolio</p></a></li>
+                        <li><a href="#"><p>LinkedIn</p></a></li>
+                        <li><a href="#"><p>Medium</p></a></li>
+                        <li><a href="#"><p>Mail</p></a></li>
                     </ul>
                     <div className={s.credit}>
                         <p>Some Digital Agency copyright 2019</p>
