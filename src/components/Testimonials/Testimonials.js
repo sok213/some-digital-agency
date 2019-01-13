@@ -68,7 +68,10 @@ class Testimonials extends Component {
     }
 
     renderActiveQuote = () => {
-        const { quote, client } = this.state.testimonials[this.state.activeQuote];
+        const { 
+            quote, 
+            client 
+        } = this.state.testimonials[this.state.activeQuote];
 
         return (
             <Animated
