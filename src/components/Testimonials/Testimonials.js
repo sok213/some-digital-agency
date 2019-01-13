@@ -29,6 +29,16 @@ class Testimonials extends Component {
         console.log('Right click')
     }
 
+    renderQuote = () => {
+        return (
+            <div className={s.quoteContainer}>
+                <div className={s.quote}>
+                    <p>"Some quote goes here" - bleh</p>
+                </div>
+            </div>
+        )
+    }
+
     render() {
         this.detectPageScroll();
 
@@ -38,22 +48,24 @@ class Testimonials extends Component {
                     animationIn="fadeIn" 
                     style={{ display: this.state.isHeaderVisible ? 'flex' : 'none' }}
                 >
-                    <Header title="Our Impact" />
+                    <Header title="Testimonials" />
                 </Animated>
 
                 {/* Carousel */}
                 <div className={s.carouselContainer}>
-                    <div className={s.leftCta}>
-                        <button onClick={this.leftClick}>
-                            <FontAwesomeIcon icon={faChevronLeft} />
-                        </button>
+                    <div className={s.leftCtaContainer}>
+                        <div className={s.leftCta}>
+                            <button onClick={this.leftClick}>
+                                <FontAwesomeIcon icon={faChevronLeft} />
+                            </button>
+                        </div>
                     </div>
                     <div className={s.center}>
                         <div className={s.centerContent}>
 
                             {/* Testimonials */}
                             <div className={s.testimonials}>
-                                <p>test</p>
+                                {this.renderQuote()}
                             </div>
 
                             {/* Dots */}
