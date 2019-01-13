@@ -13,7 +13,7 @@ class Jumbotron extends Component {
                         <h1>Some Digital Agency</h1>
                         <div className={s.underline}></div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed libero enim sed faucibus turpis in eu. Sit amet purus gravida quis blandit turpis cursus in.</p>
-                        <button className={s.discoverCta}>Discover</button>
+                        <button className={s.discoverCta}>DISCOVER</button>
                     </div>
                 </div>
                 <div className={s.particlesContainer}>

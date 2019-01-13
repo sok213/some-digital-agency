@@ -1,0 +1,80 @@
+.impactContainer {
+    min-height: 400px;
+}
+
+.carouselContainer {
+    border: thin solid red;
+    min-height: 350px;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftCta {
+    display: flex;
+    flex-grow: 1;
+    border: thin solid green;
+    text-align: center;
+    align-items: center;
+}
+
+.center {
+    text-align: center;
+    flex-grow: 2;
+    border: 3px solid pink;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.testimonials {
+    height: 100%;
+}
+
+.centerContent {
+    display: flex;
+    flex: 1;
+    height: auto;
+    flex-direction: column;
+}
+
+.rightCta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.rightCtaContent {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dotsContainer {
+    align-self: flex-end;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 0px !important;
+        
+        li {
+            display: flex;
+            height: 8px;
+            width: 8px;
+            border-radius: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            border: thin solid black;
+
+            a {
+
+            }
+        }
+    }
+}

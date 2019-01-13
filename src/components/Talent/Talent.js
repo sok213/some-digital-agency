@@ -72,7 +72,7 @@ class Talent extends Component {
         console.log('Bleh: ', this.props.amountScrolled);
     }
 
-    renderTalentItem = (item) => {
+    renderTalentItem = (item, key) => {
         const { 
             title, 
             icon, 
@@ -84,6 +84,7 @@ class Talent extends Component {
             <Animated
                 animationIn="fadeIn" 
                 style={{ display: this.state.isTalentVisible ? 'flex' : 'none' }}
+                key={key}
             >
                 <div className={s.talentItem} style={{ backgroundColor, color }}>
                     <div className={s.talentItemContent}>
@@ -122,7 +123,7 @@ class Talent extends Component {
                     </div>
                 </div>
                 <div className={s.talentGridContainer}>
-                    {this.state.talents.map(item => this.renderTalentItem(item))}
+                    {this.state.talents.map((item, key) => this.renderTalentItem(item, key))}
                 </div>
             </div>
         );
