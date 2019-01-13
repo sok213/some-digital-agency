@@ -10,7 +10,26 @@ class Testimonials extends Component {
         super();
 
         this.state = {
-            isHeaderVisible: false
+            isHeaderVisible: false,
+            testimonials: [
+                {
+                    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ",
+                    client: "some dude"
+                },
+                {
+                    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ",
+                    client: "some dude"
+                },
+                {
+                    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ",
+                    client: "some dude"
+                },
+                {
+                    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ",
+                    client: "some dude"
+                }
+            ],
+            activeQuote: 0
         }
 
     }
@@ -29,12 +48,26 @@ class Testimonials extends Component {
         console.log('Right click')
     }
 
-    renderQuote = () => {
+    renderQuote = (test, key) => {
+        const { quote, client } = test;
+
         return (
-            <div className={s.quoteContainer}>
+            <div className={s.quoteContainer} key={key}>
                 <div className={s.quote}>
-                    <p>"Some quote goes here" - bleh</p>
+                    <p>{quote}</p>
+                    <p> - {client}</p>
                 </div>
+            </div>
+        )
+    }
+
+    renderActiveQuote = () => {
+        const { quote, client } = this.state.testimonials[this.state.activeQuote];
+
+        return (
+            <div className={s.activeQuote}>
+                <p><em>"{quote}"</em></p>
+                <p>{client}</p>
             </div>
         )
     }
@@ -65,7 +98,7 @@ class Testimonials extends Component {
 
                             {/* Testimonials */}
                             <div className={s.testimonials}>
-                                {this.renderQuote()}
+                                {this.renderActiveQuote()}
                             </div>
 
                             {/* Dots */}
