@@ -11,22 +11,23 @@ class Testimonials extends Component {
 
         this.state = {
             isHeaderVisible: false,
+            isQuoteVisible: true,
             testimonials: [
                 {
                     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ",
-                    client: "some dude"
+                    client: "some dude 1"
                 },
                 {
                     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ",
-                    client: "some dude"
+                    client: "some dude 2"
                 },
                 {
                     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ",
-                    client: "some dude"
+                    client: "some dude 3"
                 },
                 {
                     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ",
-                    client: "some dude"
+                    client: "some dude 4"
                 }
             ],
             activeQuote: 0
@@ -40,12 +41,25 @@ class Testimonials extends Component {
         }
     }
 
+    handleTransition = () => {
+        this.setState({ isQuoteVisible: false });
+        setTimeout(() => {
+            this.setState({ isQuoteVisible: true });
+        }, 900);
+    }
+
     leftClick = () => {
-        console.log('Left click')
+        if(this.state.activeQuote > 0) {
+            this.setState({ activeQuote: this.state.activeQuote - 1 });
+            this.handleTransition();
+        }
     }
 
     rightClick = () => {
-        console.log('Right click')
+        if(this.state.activeQuote < 3) {
+            this.setState({ activeQuote: this.state.activeQuote + 1 });
+            this.handleTransition();
+        }
     }
 
     renderQuote = (test, key) => {
@@ -65,11 +79,35 @@ class Testimonials extends Component {
         const { quote, client } = this.state.testimonials[this.state.activeQuote];
 
         return (
-            <div className={s.activeQuote}>
-                <p><em>"{quote}"</em></p>
-                <p>{client}</p>
-            </div>
-        )
+            <Animated
+                animationIn="fadeIn" 
+                style={{ display: this.state.isHeaderVisible ? 'flex' : 'none', width: "100%" }}
+                isVisible={this.state.isQuoteVisible}
+            >
+                <div className={s.activeQuote}>
+                    <p><em>"{quote}"</em></p>
+                    <p>{client}</p>
+                </div>
+            </Animated>
+        );
+    }
+
+    renderDots = () => {
+        const { testimonials, activeQuote } = this.state;
+
+        return testimonials.map((test, key) => {
+            return (
+                <li 
+                    className={`
+                        ${activeQuote === key ? s.activeDot : null} 
+                        ${s.dot}
+                    `}
+                    key={key}
+                >
+                    <a></a>
+                </li>
+            );
+        });
     }
 
     render() {
@@ -104,10 +142,7 @@ class Testimonials extends Component {
                             {/* Dots */}
                             <div className={s.dotsContainer}>
                                 <ul>
-                                    <li><a></a></li>
-                                    <li><a></a></li>
-                                    <li><a></a></li>
-                                    <li><a></a></li>
+                                    {this.renderDots()}
                                 </ul>
                             </div>
                         </div>
