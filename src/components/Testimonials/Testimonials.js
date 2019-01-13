@@ -62,19 +62,6 @@ class Testimonials extends Component {
         }
     }
 
-    renderQuote = (test, key) => {
-        const { quote, client } = test;
-
-        return (
-            <div className={s.quoteContainer} key={key}>
-                <div className={s.quote}>
-                    <p>{quote}</p>
-                    <p> - {client}</p>
-                </div>
-            </div>
-        )
-    }
-
     renderActiveQuote = () => {
         const { quote, client } = this.state.testimonials[this.state.activeQuote];
 
@@ -85,8 +72,8 @@ class Testimonials extends Component {
                 isVisible={this.state.isQuoteVisible}
             >
                 <div className={s.activeQuote}>
-                    <p><em>"{quote}"</em></p>
-                    <p>{client}</p>
+                    <p className={s.quote}><em>"{quote}"</em></p>
+                    <p className={s.saidBy}>{client}</p>
                 </div>
             </Animated>
         );
