@@ -12,6 +12,7 @@ class Testimonials extends Component {
         this.state = {
             isHeaderVisible: false,
             isQuoteVisible: true,
+            isCarouselVisible: false,
             testimonials: [
                 {
                     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ",
@@ -38,6 +39,10 @@ class Testimonials extends Component {
     detectPageScroll = () => {
         if(this.props.amountScrolled > 1450 && !this.state.isHeaderVisible) {
             this.setState({ isHeaderVisible: true });
+        }
+
+        if(this.props.amountScrolled > 1520 && !this.state.isCarouselVisible) {
+            this.setState({ isCarouselVisible: true });
         }
     }
 
@@ -110,38 +115,43 @@ class Testimonials extends Component {
                 </Animated>
 
                 {/* Carousel */}
-                <div className={s.carouselContainer}>
-                    <div className={s.leftCtaContainer}>
-                        <div className={s.leftCta}>
-                            <button onClick={this.leftClick}>
-                                <FontAwesomeIcon icon={faChevronLeft} />
-                            </button>
-                        </div>
-                    </div>
-                    <div className={s.center}>
-                        <div className={s.centerContent}>
-
-                            {/* Testimonials */}
-                            <div className={s.testimonials}>
-                                {this.renderActiveQuote()}
-                            </div>
-
-                            {/* Dots */}
-                            <div className={s.dotsContainer}>
-                                <ul>
-                                    {this.renderDots()}
-                                </ul>
+                <Animated
+                    animationIn="fadeIn" 
+                    style={{ display: this.state.isCarouselVisible ? 'flex' : 'none' }}
+                >
+                    <div className={s.carouselContainer}>
+                        <div className={s.leftCtaContainer}>
+                            <div className={s.leftCta}>
+                                <button onClick={this.leftClick}>
+                                    <FontAwesomeIcon icon={faChevronLeft} />
+                                </button>
                             </div>
                         </div>
-                    </div>
-                    <div className={s.rightCtaContainer}>
-                        <div className={s.rightCta}>
-                            <button onClick={this.rightClick}>
-                                <FontAwesomeIcon icon={faChevronRight} />
-                            </button>
+                        <div className={s.center}>
+                            <div className={s.centerContent}>
+
+                                {/* Testimonials */}
+                                <div className={s.testimonials}>
+                                    {this.renderActiveQuote()}
+                                </div>
+
+                                {/* Dots */}
+                                <div className={s.dotsContainer}>
+                                    <ul>
+                                        {this.renderDots()}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={s.rightCtaContainer}>
+                            <div className={s.rightCta}>
+                                <button onClick={this.rightClick}>
+                                    <FontAwesomeIcon icon={faChevronRight} />
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </Animated>
             </div>
         );
     }
