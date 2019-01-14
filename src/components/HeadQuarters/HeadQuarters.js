@@ -47,9 +47,11 @@ class HeadQuarters extends Component {
         return (
             <div className={s.hqContainer}>
                 <div className={s.innerContainer}>
-                    <Header title="Headquarters" />
+                    <div className={s.headerContainer}>
+                        <Header title="Headquarters" />
+                    </div>
                     <div className={s.headline}>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dis parturient montes nascetur ridiculus. Ultrices mi tempus imperdiet nulla. Mi in nulla posuere sollicitudin.</p>
+                        <p>A Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dis parturient montes nascetur ridiculus. Ultrices mi tempus imperdiet nulla. Mi in nulla posuere sollicitudin.</p>
                     </div>
                     <div className={s.citiesContainer}>
                         <div className={s.cities}>
