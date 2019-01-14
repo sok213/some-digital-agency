@@ -71,7 +71,7 @@ class HeadQuarters extends Component {
                             <Header title="Headquarters" />
                         </div>
                         <div className={s.headline}>
-                            <p>We believe that happy environments make happy employees; happy employees results in satisfactory products. Our headquarters are bases in carefully picked cities to ensure that our teams are happy, healthy, and have easy access to surrounding yoga gyms and organic restaurants!</p>
+                            <p>We believe that happy environments make happy employees; happy employees results in satisfactory products. Our headquarters are based in carefully picked cities to ensure that our teams are happy, healthy, and have easy access to surrounding yoga gyms and organic restaurants!</p>
                         </div>
                         <div className={s.citiesContainer}>
                             <div className={s.cities}>
