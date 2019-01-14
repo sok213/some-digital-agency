@@ -20,12 +20,12 @@ class Testimonials extends Component {
                     client: "Mark Baker (C.E.O of some tech company)"
                 },
                 {
-                    quote: "Before I discovered Some Digital Agency, I was driving a car with that opened regularly, but now after my platform made billions of dollars, I am driving a car that has doors that opens vertically which is awesome.",
-                    client: "Russ Hanneman - Tech Billionaire"
+                    quote: "Before I discovered Some Digital Agency, I was driving a car with doors that opened regularly, but now after my platform made billions of dollars, I am driving a car that has doors that opens vertically which is awesome.",
+                    client: "Russ Hanneman (Tech Billionaire)"
                 },
                 {
-                    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ",
-                    client: "some dude 3"
+                    quote: "Some Digital Agency delivered all of our digital products and we have never been happier!",
+                    client: "Vanessa Dobler (Owner of various e-commerce stores)"
                 },
                 {
                     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ",
