@@ -4,10 +4,11 @@ import { Animated } from 'react-animated-css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
     faLinkedin,
-    faMedium
+    faMedium,
 } from '@fortawesome/free-brands-svg-icons';
 import { 
-    faCode 
+    faCode,
+    faChevronUp
 } from '@fortawesome/free-solid-svg-icons';
 
 class Footer extends Component {
@@ -65,7 +66,15 @@ class Footer extends Component {
 
                 </div>
                 <div className={s.credit}>
-                    <p>Some Digital Agency copyright 2019</p>
+                <p>Some Digital Agency copyright 2019</p>
+                    <div className={s.creditContainer}>
+                        <a 
+                            href="#"
+                            className={s.toTopIcon}
+                        >
+                            <FontAwesomeIcon className={s.faChevronUp} icon={faChevronUp} />
+                        </a>
+                    </div>
                 </div>
             </div>
         );
