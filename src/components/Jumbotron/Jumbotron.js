@@ -22,7 +22,7 @@ class Jumbotron extends Component {
                             offset={-30} 
                             duration={500}
                         >
-                            <spam>DISCOVER</spam>
+                            <span>DISCOVER</span>
                         </Link>
                     </div>
                 </div>

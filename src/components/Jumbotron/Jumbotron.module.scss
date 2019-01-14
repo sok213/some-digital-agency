@@ -5,6 +5,7 @@
     color: white;
     background-image: url('./../../assets/jumboi.jpg');
     background-size: cover;
+    background-position: center center;
 }
 
 .particlesContainer {
@@ -35,7 +36,7 @@
     margin-right: auto;
     border-radius: 100px;
     margin-top: 20px;
-    border: 1px solid white;
+    border: 3px solid white;
     color: white;
     background-color: rgba(0,0,0,0);
     transition: 0.3s;
@@ -43,6 +44,10 @@
     letter-spacing: 3px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     cursor: pointer;
+
+    span {
+        font-weight: bold;
+    }
 
     &:hover {
         background-color: white;
@@ -84,11 +89,26 @@
     padding: 0px 24px;
 
     h1 {
-        letter-spacing: 2px;
+        letter-spacing: 4px;
+        font-size: 55px;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;
+
+        @media screen and (max-width: 540px) {
+            letter-spacing: 2px;
+            font-size: 45px;
+        }
     }
 
     p {
         font-family: 'Thasadith', sans-serif;
+        font-size: 22px;
+        line-height: 24px;
+        letter-spacing: 1px;
+        
+        @media screen and (max-width: 540px) {
+            font-size: 18px;
+        }
     }
 }
 
