@@ -7,14 +7,7 @@ import Footer from './components/Footer/Footer';
 import Purpose from './components/Purpose/Purpose';
 import Testimonials from './components/Testimonials/Testimonials';
 import HeadQuarters from './components/HeadQuarters/HeadQuarters';
-import * as Scroll from 'react-scroll';
-import { 
-    Link,
-    Element,
-    Events, 
-    animateScroll as scroll, 
-    scrollSpy
- } from 'react-scroll';
+import { Element } from 'react-scroll';
 
 
 class App extends Component {

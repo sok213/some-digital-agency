@@ -99,7 +99,6 @@ class Testimonials extends Component {
                     `}
                     key={key}
                 >
-                    <a></a>
                 </li>
             );
         });

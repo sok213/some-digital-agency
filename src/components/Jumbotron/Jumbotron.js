@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import s from './Jumbotron.module.scss';
 import Particles from 'react-particles-js';
-import * as Scroll from 'react-scroll';
 import { 
     Link,
-    Element,
     Events, 
-    animateScroll as scroll, 
     scrollSpy
  } from 'react-scroll';
 

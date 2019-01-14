@@ -22,7 +22,6 @@ class Talent extends Component {
             talents: [
                 {
                     title: 'Innovate',
-                    icon: null,
                     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     backgroundColor: '#EA4C5A',
                     color: "white",
@@ -30,7 +29,6 @@ class Talent extends Component {
                 },
                 {
                     title: 'Strategize',
-                    icon: null,
                     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     backgroundColor: "#FEFEFE",
                     color: "#545454",
@@ -38,7 +36,6 @@ class Talent extends Component {
                 },
                 {
                     title: 'Design',
-                    icon: null,
                     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     backgroundColor: "#22BBBE",
                     color: "white",
@@ -46,7 +43,6 @@ class Talent extends Component {
                 },
                 {
                     title: 'Analyze',
-                    icon: null,
                     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     backgroundColor: "#e5e5e5",
                     color: "#545454",
@@ -91,8 +87,8 @@ class Talent extends Component {
                         <div className={s.iconContainer}>
                             <FontAwesomeIcon icon={icon} />
                         </div>
-                        <h4 className={s.talentTitle}>{item.title}</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dis parturient montes nascetur.</p>
+                        <h4 className={s.talentTitle}>{title}</h4>
+                        <p>{desc}</p>
                     </div>
                 </div>
             </Animated>

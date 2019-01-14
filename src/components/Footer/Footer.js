@@ -8,9 +8,9 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { 
     faCode,
+    faEnvelope,
     faChevronUp
 } from '@fortawesome/free-solid-svg-icons';
-import * as Scroll from 'react-scroll';
 import { 
     Events, 
     animateScroll as scroll, 
@@ -55,34 +55,35 @@ class Footer extends Component {
                             <ul className={s.linksList}>
                                 <h4>Some Stuff</h4>
                                 <li>
-                                    <a href="#">
+                                    <a 
+                                        target="_blank"
+                                        without rel="noopener noreferrer"
+                                        href="http://www.sokcodes.com/">
                                         <p>Portfolio<FontAwesomeIcon className={s.faIcon} icon={faCode} /></p>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a 
+                                        target="_blank"
+                                        without rel="noopener noreferrer"
+                                        href="https://www.linkedin.com/in/sophanarith-sok-a50097b7/">
                                         <p>LinkedIn<FontAwesomeIcon className={s.faIcon} icon={faLinkedin} /></p>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a 
+                                        target="_blank"
+                                        without rel="noopener noreferrer"
+                                        href="https://medium.com/@sok213">
                                         <p>Medium<FontAwesomeIcon className={s.faIcon} icon={faMedium} /></p>
                                     </a>
                                 </li>
-                            </ul>
-                        </div>
-
-                        <div className={s.col}>
-                        <ul className={s.linksList}>
-                                <h4>No One Clicks on These</h4>
                                 <li>
-                                    <a href="#">
-                                        <p>API</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p>License</p>
+                                    <a 
+                                        target="_blank"
+                                        without rel="noopener noreferrer"
+                                        href="mailto:sokcodes@gmail.com">
+                                        <p>E-mail<FontAwesomeIcon className={s.faIcon} icon={faEnvelope} /></p>
                                     </a>
                                 </li>
                             </ul>
@@ -90,25 +91,56 @@ class Footer extends Component {
 
                         <div className={s.col}>
                             <ul className={s.linksList}>
-                                <h4>Some More Stuff</h4>
-                                <li><a href="#"><p>Contact</p></a></li>
-                                <li><a href="#"><p>Status</p></a></li>
-                                <li><a href="#"><p>Help</p></a></li>
+                                <h4>No One Clicks on These</h4>
+                                <li>
+                                    <a
+                                        target="_blank"
+                                        without rel="noopener noreferrer" 
+                                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                                    >
+                                        <p>API</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                        target="_blank"
+                                        without rel="noopener noreferrer" 
+                                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                                    >
+                                        <p>License</p>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
-                        
 
+                        <div className={s.col}>
+                            <ul className={`${s.linksList}`}>
+                                <h4>Some More Stuff</h4>
+                                <li><a
+                                    target="_blank"
+                                    without rel="noopener noreferrer" 
+                                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><p>Contact</p></a></li>
+                                <li><a
+                                    target="_blank"
+                                    without rel="noopener noreferrer" 
+                                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><p>Status</p></a></li>
+                                <li><a
+                                    target="_blank"
+                                    without rel="noopener noreferrer" 
+                                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><p>Help</p></a></li>
+                            </ul>
+                        </div>
                     </div>
+
                     <div className={s.credit}>
-                    <p>Some Digital Agency copyright 2019</p>
+                        <p>Some Digital Agency copyright 2019</p>
                         <div className={s.creditContainer}>
-                            <a 
+                            <button 
                                 onClick={() => scroll.scrollToTop()}
-                                href="#"
                                 className={s.toTopIcon}
                             >
                                 <FontAwesomeIcon className={s.faChevronUp} icon={faChevronUp} />
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </Animated>

@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import s from './NavBar.module.scss';
-import * as Scroll from 'react-scroll';
 import { 
     Link,
-    Element,
     Events, 
-    animateScroll as scroll, 
     scrollSpy
  } from 'react-scroll';
 
