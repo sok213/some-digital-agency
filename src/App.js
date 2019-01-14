@@ -35,6 +35,7 @@ class App extends Component {
 			<div className="App">
 				<NavBar />
 				<Jumbotron />
+				<a name="purpose"></a>
 				<div className={s.container}>
 					<Purpose />
 				</div>

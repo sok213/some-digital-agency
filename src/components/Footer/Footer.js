@@ -10,6 +10,12 @@ import {
     faCode,
     faChevronUp
 } from '@fortawesome/free-solid-svg-icons';
+import * as Scroll from 'react-scroll';
+import { 
+    Events, 
+    animateScroll as scroll, 
+    scrollSpy
+ } from 'react-scroll';
 
 class Footer extends Component {
     constructor() {
@@ -18,6 +24,13 @@ class Footer extends Component {
         this.state = {
             isContentVisible: false
         }
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll, { passive: true });
+        Events.scrollEvent.register('begin');
+        Events.scrollEvent.register('end');
+        scrollSpy.update();
     }
 
     detectPageScroll = () => {
@@ -90,6 +103,7 @@ class Footer extends Component {
                     <p>Some Digital Agency copyright 2019</p>
                         <div className={s.creditContainer}>
                             <a 
+                                onClick={() => scroll.scrollToTop()}
                                 href="#"
                                 className={s.toTopIcon}
                             >
