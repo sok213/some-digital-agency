@@ -8,6 +8,14 @@ import Purpose from './components/Purpose/Purpose';
 import Testimonials from './components/Testimonials/Testimonials';
 import HeadQuarters from './components/HeadQuarters/HeadQuarters';
 import * as Scroll from 'react-scroll';
+import { 
+    Link,
+    Element,
+    Events, 
+    animateScroll as scroll, 
+    scrollSpy
+ } from 'react-scroll';
+
 
 class App extends Component {
 	constructor() {
@@ -35,15 +43,27 @@ class App extends Component {
 			<div className="App">
 				<NavBar />
 				<Jumbotron />
-				<a name="purpose"></a>
-				<div className={s.container}>
-					<Purpose />
-				</div>
-				<Talent amountScrolled={this.state.amountScrolled} />
-				<div className={s.container}>
-					<Testimonials amountScrolled={this.state.amountScrolled} />
-				</div>
-				<HeadQuarters amountScrolled={this.state.amountScrolled} />
+
+				<Element name="purpose">
+					<div className={s.container}>
+						<Purpose />
+					</div>
+				</Element>
+
+				<Element name="talent">
+					<Talent amountScrolled={this.state.amountScrolled} />
+				</Element>
+
+				<Element name="impact">
+					<div className={s.container}>
+						<Testimonials amountScrolled={this.state.amountScrolled} />
+					</div>
+				</Element>
+
+				<Element name="hq">
+					<HeadQuarters amountScrolled={this.state.amountScrolled} />
+				</Element>
+
 				<Footer amountScrolled={this.state.amountScrolled} />
 			</div>
 		);

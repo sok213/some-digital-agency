@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import s from './NavBar.module.scss';
 import * as Scroll from 'react-scroll';
 import { 
+    Link,
+    Element,
     Events, 
     animateScroll as scroll, 
     scrollSpy
@@ -52,10 +54,34 @@ class NavBar extends Component {
                 `} 
             >
                 <ul className={s.mainNav}>
-                    <li><a onClick={this.scrollTo.bind(this, 'purpose')}>Purpose</a></li>
-                    <li><a onClick={this.scrollTo.bind(this, 'talent')}>Talent</a></li>
-                    <li><a onClick={this.scrollTo.bind(this, 'impact')}>Impact</a></li>
-                    <li><a onClick={this.scrollTo.bind(this, 'hq')}>HQ</a></li>
+                    <li>
+                        <Link 
+                            to="purpose" spy={true} smooth={true} offset={-30} duration={500}
+                        >
+                            Purpose
+                        </Link>
+                    </li>
+                    <li>
+                        <Link 
+                            to="talent" spy={true} smooth={true} offset={-30} duration={500}
+                        >
+                            Talent
+                        </Link>
+                    </li>
+                    <li>
+                        <Link 
+                            to="impact" spy={true} smooth={true} offset={-30} duration={500}
+                        >
+                            Impact
+                        </Link>
+                    </li>
+                    <li>
+                        <Link 
+                            to="hq" spy={true} smooth={true} offset={-30} duration={500}
+                        >
+                            HQ
+                        </Link>
+                    </li>
                 </ul>
             </div>
         );

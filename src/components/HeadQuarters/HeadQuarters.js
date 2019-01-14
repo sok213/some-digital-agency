@@ -35,11 +35,12 @@ class HeadQuarters extends Component {
     }
 
     renderCityItems = () => {
-        return this.state.cities.map(({ location, img }) => {
+        return this.state.cities.map(({ location, img }, key) => {
             return (
                 <div 
                     className={s.cityItem} 
                     style={{ backgroundImage: `url(${img})` }}
+                    key={key}
                 >
                     <div 
                         className={s.contentContainer}
