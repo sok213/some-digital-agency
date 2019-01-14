@@ -18,9 +18,17 @@
 }
 
 .primaryTextContent {
-    max-width: 600px;
+    max-width: 800px;
     text-align: center;
     margin-top: -10px;
+
+    p {
+        font-family: 'Aleo', serif !important;
+        font-size: 20px;
+        color: #434343;
+        line-height: 1.3em;
+        color: rgb(61, 98, 114);
+    }
 
     @media screen and (max-width: 1024px) {
         text-align: left;
@@ -46,7 +54,7 @@
 
 .talentItem {
     flex: 1;
-    padding: 10px 30px;
+    padding: 20px 30px;
     min-height: 300px;
     display: flex;
     flex-direction: row;

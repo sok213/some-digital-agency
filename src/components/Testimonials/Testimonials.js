@@ -13,14 +13,15 @@ class Testimonials extends Component {
             isHeaderVisible: false,
             isQuoteVisible: true,
             isCarouselVisible: false,
+            navDisabled: false,
             testimonials: [
                 {
-                    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ",
-                    client: "some dude 1"
+                    quote: "Some Digital Agency drastically overhauled our platform and now in just over 6 months, our revenues when up by 120% and our customers are happier than ever.",
+                    client: "Mark Baker (C.E.O of some tech company)"
                 },
                 {
-                    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ",
-                    client: "some dude 2"
+                    quote: "Before I discovered Some Digital Agency, I was driving a car with that opened regularly, but now after my platform made billions of dollars, I am driving a car that has doors that opens vertically which is awesome.",
+                    client: "Russ Hanneman - Tech Billionaire"
                 },
                 {
                     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ",
@@ -46,24 +47,35 @@ class Testimonials extends Component {
         }
     }
 
-    handleTransition = () => {
-        this.setState({ isQuoteVisible: false });
+    handleTransition = (direction) => {
+        this.setState({ 
+            isQuoteVisible: false, 
+            navDisabled: true 
+        });
+
         setTimeout(() => {
-            this.setState({ isQuoteVisible: true });
+            if(direction === 'right') {
+                this.setState({ activeQuote: this.state.activeQuote + 1 });
+            } else if(direction === 'left') {
+                this.setState({ activeQuote: this.state.activeQuote - 1 });
+            }
+
+            this.setState({ 
+                isQuoteVisible: true, 
+                navDisabled: false 
+            });
         }, 900);
     }
 
     leftClick = () => {
         if(this.state.activeQuote > 0) {
-            this.setState({ activeQuote: this.state.activeQuote - 1 });
-            this.handleTransition();
+            this.handleTransition('left');
         }
     }
 
     rightClick = () => {
         if(this.state.activeQuote < 3) {
-            this.setState({ activeQuote: this.state.activeQuote + 1 });
-            this.handleTransition();
+            this.handleTransition('right');
         }
     }
 
@@ -124,7 +136,10 @@ class Testimonials extends Component {
                     <div className={s.carouselContainer}>
                         <div className={s.leftCtaContainer}>
                             <div className={s.leftCta}>
-                                <button onClick={this.leftClick}>
+                                <button 
+                                    disabled={this.state.navDisabled}
+                                    onClick={this.leftClick}
+                                >
                                     <FontAwesomeIcon icon={faChevronLeft} />
                                 </button>
                             </div>
@@ -147,7 +162,10 @@ class Testimonials extends Component {
                         </div>
                         <div className={s.rightCtaContainer}>
                             <div className={s.rightCta}>
-                                <button onClick={this.rightClick}>
+                                <button 
+                                    disabled={this.state.navDisabled}
+                                    onClick={this.rightClick}    
+                                >
                                     <FontAwesomeIcon icon={faChevronRight} />
                                 </button>
                             </div>

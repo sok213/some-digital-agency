@@ -68,7 +68,7 @@ class Purpose extends Component {
                         <Animated animationIn="fadeInRight">
                             <div className={s.descContent}>
                                 <h3>Our purpose to <span style={{ fontStyle: "italic" }}>impact</span></h3>
-                                <p>Bro ipsum dolor sit amet rip tele skid lid avie. Cork cruiser ollie huck. Bonk big ring acro, reverse camber table top taco glove single track spread eagle rigid gorby shreddin pipe. Skate manny schwag laps sucker hole over the bars, brain bucket face shots pillow popping spin ski bum glades. Sketching washboard gaper huck, bomb corn Whistler park rat twister ACL.</p>
+                                <p>In a world where society is more connected digitally than ever and yet more disconnected in reality than ever before, we believe that our platforms can bring balance back into the universe. <br /><br /> We are dedicated to delivering impactful platforms and experiences to consumers to make them feel and be connected with brands that they love and trust.</p>
                             </div>
                         </Animated>
                     </div>

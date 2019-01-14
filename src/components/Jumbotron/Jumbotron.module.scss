@@ -90,9 +90,7 @@
 
     h1 {
         letter-spacing: 4px;
-        font-size: 55px;
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: black;
+        font-size: 50px;
 
         @media screen and (max-width: 540px) {
             letter-spacing: 2px;
@@ -102,7 +100,7 @@
 
     p {
         font-family: 'Thasadith', sans-serif;
-        font-size: 22px;
+        font-size: 20px;
         line-height: 24px;
         letter-spacing: 1px;
         
