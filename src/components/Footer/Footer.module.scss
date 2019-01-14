@@ -4,7 +4,7 @@
     background-color: #180F3D;
     min-height: 200px;
     flex-direction: column;
-
+    
     h3 {
         color: rgb(255, 255, 255);
     }
@@ -40,12 +40,6 @@
     position: relative;
     color: white;
     font-size: 17px;
-}
-
-.deadLinks {
-    li {
-        pointer-events: none;
-    }
 }
 
 .toTopIcon {

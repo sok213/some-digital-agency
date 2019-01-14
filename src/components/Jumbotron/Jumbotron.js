@@ -1,24 +1,11 @@
 import React, { Component } from 'react';
 import s from './Jumbotron.module.scss';
 import Particles from 'react-particles-js';
-import { 
-    Link,
-    Events, 
-    scrollSpy
- } from 'react-scroll';
-
+import ParticlesParams from './particles.json';
+import { Link } from 'react-scroll';
 
 class Jumbotron extends Component {
-
-    componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll, { passive: true });
-        Events.scrollEvent.register('begin');
-        Events.scrollEvent.register('end');
-        scrollSpy.update();
-    }
-
     render() {
-
         return (
             <div className={s.jumbotronContainer} id="particles-js">
                 <div className={s.headerContainer}>
@@ -40,7 +27,7 @@ class Jumbotron extends Component {
                     </div>
                 </div>
                 <div className={s.particlesContainer}>
-                    {/* <Particles /> */}
+                    <Particles params={ParticlesParams} />
                 </div>
             </div>
         );
