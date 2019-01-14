@@ -4,6 +4,10 @@
 	display: flex;
 	list-style: none;
 	padding: 0px !important;
+
+	li {
+		padding-top: 5px;
+	}
 }
 
 .navBarContainer {
@@ -18,6 +22,25 @@
 	padding: 13px 0px;
 	top: 0;
 	width: 100%;
+	height: 70px;
+}
+
+.navUnderline {
+	background-color: rgb(91, 101, 105);
+	height: 3px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 0px;
+	border-radius: 100px;
+	transition: 0.3s;
+}
+
+.navActive {
+
+	.navUnderline {
+		width: 40px !important;
+	}
 }
 
 .mainNav a {

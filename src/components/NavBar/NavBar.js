@@ -33,18 +33,6 @@ class NavBar extends Component {
         this.setState({ amountScrolled: window.pageYOffset });
     }
 
-    scrollTo = (section) => {
-        if(section === 'purpose') {
-            scroll.scrollTo(620);
-        } else if(section === 'talent') {
-            scroll.scrollTo(1215);
-        } else if(section === 'impact') {
-            scroll.scrollTo(1800);
-        } else if(section === 'hq') {
-            scroll.scrollTo(2290);
-        }
-    }
-
     render() {
         return (
             <div 
@@ -56,30 +44,38 @@ class NavBar extends Component {
                 <ul className={s.mainNav}>
                     <li>
                         <Link 
+                            activeClass={s.navActive}
                             to="purpose" spy={true} smooth={true} offset={-30} duration={500}
                         >
                             Purpose
+                            <div className={s.navUnderline}></div>
                         </Link>
                     </li>
                     <li>
                         <Link 
+                            activeClass={s.navActive}
                             to="talent" spy={true} smooth={true} offset={-30} duration={500}
                         >
                             Talent
+                            <div className={s.navUnderline}></div>
                         </Link>
                     </li>
                     <li>
                         <Link 
+                            activeClass={s.navActive}
                             to="impact" spy={true} smooth={true} offset={-30} duration={500}
                         >
                             Impact
+                            <div className={s.navUnderline}></div>
                         </Link>
                     </li>
                     <li>
                         <Link 
+                            activeClass={s.navActive}
                             to="hq" spy={true} smooth={true} offset={-30} duration={500}
                         >
                             HQ
+                            <div className={s.navUnderline}></div>
                         </Link>
                     </li>
                 </ul>
