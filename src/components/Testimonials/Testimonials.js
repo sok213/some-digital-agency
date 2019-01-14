@@ -28,8 +28,8 @@ class Testimonials extends Component {
                     client: "Vanessa Dobler (Owner of various e-commerce stores)"
                 },
                 {
-                    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ",
-                    client: "some dude 4"
+                    quote: "“Some Digital Agency did our business wonders! It changed our lives and the lives of our customers.”",
+                    client: "Thomasface McFace (Some entrepreneur)"
                 }
             ],
             activeQuote: 0
