@@ -36,14 +36,14 @@ class Talent extends Component {
                 },
                 {
                     title: 'Design',
-                    desc: 'Our designers are passionate about bringing the most aethetically impactful experiences that utilizes the most effective marketing strategize that can speak the product to the users in the most meaningful way possible.',
+                    desc: 'Our designers are passionate about bringing the most aesthetically impactful experiences that utilizes the most effective marketing strategize to communicate the product to the customers in the most meaningful way possible.',
                     backgroundColor: "#22BBBE",
                     color: "white",
                     icon: faPencilRuler
                 },
                 {
                     title: 'Analyze',
-                    desc: 'We study user data to get deep insight into what works in a digital product and what can improve. Get insight into how your users behave with your products and why they do it in order to innovate over time using data points to maximize user engagement.',
+                    desc: 'Study user data to get deep insight into what works in a digital product and what can improve. Get insight into how your users behave with your products and understand the best way to innovate using data sets to strategically maximize user engagement.',
                     backgroundColor: "#e5e5e5",
                     color: "#545454",
                     icon: faChartArea
