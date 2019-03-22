@@ -1,8 +1,8 @@
-## Some Digital Agency
+# Some Digital Agency
 
 A satirical webpage that represents many digital agency websites that are prevalent across the tech industy. This project was built with React, Flexbox, and Sass.
 
-# How to Run
+## How to Run
 
 Run dev envirionment locally
 
