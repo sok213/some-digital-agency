@@ -5,9 +5,11 @@ A satirical webpage that represents many digital agency websites that are preval
 Run dev envirionment locally
 
 `yarn install`
+
 `yarn dev`
 
 or
 
 `npm install`
+
 `npm run dev`
