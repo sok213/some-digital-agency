@@ -39,6 +39,13 @@ class Footer extends Component {
         }
     }
 
+    getDate = () => {
+      let d = new Date();
+      let year = d.getFullYear();
+
+      return year;
+    }
+
     render() {
         this.detectPageScroll();
 
@@ -133,7 +140,7 @@ class Footer extends Component {
                     </div>
 
                     <div className={s.credit}>
-                        <p>Some Digital Agency copyright 2019</p>
+                        <p>Some Digital Agency copyright {this.getDate()}</p>
                         <div className={s.creditContainer}>
                             <button 
                                 onClick={() => scroll.scrollToTop()}

@@ -12,24 +12,24 @@ import { Element } from 'react-scroll';
 
 class App extends Component {
 	constructor() {
-        super();
+    super();
 
-        this.state = {
-            amountScrolled: window.pageYOffset
-        }
+    this.state = {
+      amountScrolled: window.pageYOffset
     }
+  }
 
 	componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll, { passive: true });
-    }
+      window.addEventListener('scroll', this.handleScroll, { passive: true });
+  }
 
-    componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleScroll);
-    }
+  componentWillUnmount() {
+      window.removeEventListener('scroll', this.handleScroll);
+  }
 
-    handleScroll = () => {
-        this.setState({ amountScrolled: window.pageYOffset });
-    }
+  handleScroll = () => {
+      this.setState({ amountScrolled: window.pageYOffset });
+  }
     
 	render() {
 		return (
