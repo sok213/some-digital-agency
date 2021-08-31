@@ -22,7 +22,7 @@ class Talent extends Component {
             talents: [
                 {
                     title: 'Innovate',
-                    desc: 'Same same, but different. Utilizing proven effective design and marketing strategies while innovating and improving what we believe has been lacking in the digital market is our core reason why our digital products always come out on top.',
+                    desc: 'Same same, but different. Utilizing proven effective case studies, we have chosen design and marketing strategies that have a proven track record for delivering the best results while also building upon these practices to establising our products as the leading edge of modern digital media.',
                     backgroundColor: '#EA4C5A',
                     color: "white",
                     icon: faCogs
@@ -36,14 +36,14 @@ class Talent extends Component {
                 },
                 {
                     title: 'Design',
-                    desc: 'Our designers are passionate about bringing the most aesthetically impactful experiences that utilizes the most effective marketing strategize to communicate the product to the customers in the most meaningful way possible.',
+                    desc: 'Our designers are passionate about bringing the most aesthetically impactful experiences that utilizes the most effective marketing methods to communicate the product to the customers in the most meaningful way possible.',
                     backgroundColor: "#22BBBE",
                     color: "white",
                     icon: faPencilRuler
                 },
                 {
                     title: 'Analyze',
-                    desc: 'Study user data to get deep insight into what works in a digital product and what can improve. Get insight into how your users behave with your products and understand the best way to innovate using data sets to strategically maximize user engagement.',
+                    desc: 'We study user data to get deep insight into what works in a digital product and what can improve. Get insight into how your users behave with your products and understand the best way to innovate using data sets to strategically maximize user engagement.',
                     backgroundColor: "#e5e5e5",
                     color: "#545454",
                     icon: faChartArea

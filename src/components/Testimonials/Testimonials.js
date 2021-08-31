@@ -24,11 +24,11 @@ class Testimonials extends Component {
                     client: "Russ Hanneman (Tech Billionaire)"
                 },
                 {
-                    quote: "Some Digital Agency delivered all of our digital products and we have never been happier!",
+                    quote: "Some Digital Agency delivered all of our digital products and now I a have more money than my neighbor, Scott, which makes me happy because I hate Scott.",
                     client: "Vanessa Dobler (Owner of various e-commerce stores)"
                 },
                 {
-                    quote: "“Some Digital Agency did our business wonders! It changed our lives and the lives of our customers.”",
+                    quote: "Some Digital Agency did our business wonders! It changed our lives and the lives of our customers. Most importantly, it made me money.",
                     client: "Thomasface McFace (Some entrepreneur)"
                 }
             ],
