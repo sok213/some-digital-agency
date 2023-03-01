@@ -10,7 +10,7 @@ class Jumbotron extends Component {
             <div className={s.jumbotronContainer} id="particles-js">
                 <div className={s.headerContainer}>
                     <div className={s.headerContent}>
-                        <h1>Some Digital Agency</h1>
+                        <h1>Digital Agencies Be Like</h1>
                         <div className={s.underline}></div>
                         <p>We believe that through <am>powerful</am> and <em>authentic</em> digital experiences, we can <em>unite</em> consumers and brands like never before by establishing engaging relationships through our innovative digital platforms.</p>
                         

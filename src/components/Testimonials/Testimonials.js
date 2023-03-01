@@ -16,19 +16,19 @@ class Testimonials extends Component {
             navDisabled: false,
             testimonials: [
                 {
-                    quote: "Some Digital Agency drastically overhauled our platform and now in just over 6 months, our revenues when up by 120% and our customers are happier than ever.",
+                    quote: "Digital Agency Be Like drastically overhauled our platform and now in just over 6 months, our revenues when up by 120% and our customers are happier than ever.",
                     client: "Mark Baker (C.E.O of some tech company)"
                 },
                 {
-                    quote: "Before I discovered Some Digital Agency, I was driving a car with doors that opened regularly, but now after my platform made billions of dollars, I am driving a car that has doors that opens vertically which is awesome.",
+                    quote: "Before I discovered Digital Agency Be Like, I was driving a car with doors that opened regularly, but now after my platform made billions of dollars, I am driving a car that has doors that opens vertically which is awesome.",
                     client: "Russ Hanneman (Tech Billionaire)"
                 },
                 {
-                    quote: "Some Digital Agency delivered all of our digital products and now I a have more money than my neighbor, Scott, which makes me happy because I hate Scott.",
+                    quote: "Digital Agency Be Like delivered all of our digital products and now I a have more money than my neighbor, Scott, which makes me happy because I hate Scott.",
                     client: "Vanessa Dobler (Owner of various e-commerce stores)"
                 },
                 {
-                    quote: "Some Digital Agency did our business wonders! It changed our lives and the lives of our customers. Most importantly, it made me money.",
+                    quote: "Digital Agency Be Like did our business wonders! It changed our lives and the lives of our customers. Most importantly, it made me money.",
                     client: "Thomasface McFace (Some entrepreneur)"
                 }
             ],

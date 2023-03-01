@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
     faLinkedin,
     faMedium,
+    faGithub
 } from '@fortawesome/free-brands-svg-icons';
 import { 
     faCode,
@@ -81,17 +82,17 @@ class Footer extends Component {
                                     <a 
                                         target="_blank"
                                         without rel="noopener noreferrer"
-                                        href="https://medium.com/@sok213">
-                                        <p>Medium<FontAwesomeIcon className={s.faIcon} icon={faMedium} /></p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a 
-                                        target="_blank"
-                                        without rel="noopener noreferrer"
                                         href="mailto:sokcodes@gmail.com">
                                         <p>E-mail<FontAwesomeIcon className={s.faIcon} icon={faEnvelope} /></p>
                                     </a>
+                                </li>
+                                <li>
+                                  <a 
+                                      target="_blank"
+                                      without rel="noopener noreferrer"
+                                      href="mailto:sokcodes@gmail.com">
+                                      <p>Website Source Code<FontAwesomeIcon className={s.faIcon} icon={faGithub} /></p>
+                                  </a>
                                 </li>
                             </ul>
                         </div>
