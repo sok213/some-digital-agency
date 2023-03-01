@@ -90,7 +90,7 @@ class Footer extends Component {
                                   <a 
                                       target="_blank"
                                       without rel="noopener noreferrer"
-                                      href="mailto:sokcodes@gmail.com">
+                                      href="https://github.com/sok213/some-digital-agency/tree/master/src">
                                       <p>Website Source Code<FontAwesomeIcon className={s.faIcon} icon={faGithub} /></p>
                                   </a>
                                 </li>
