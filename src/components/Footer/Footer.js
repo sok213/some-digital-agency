@@ -104,7 +104,7 @@ class Footer extends Component {
                                     <a
                                         target="_blank"
                                         without rel="noopener noreferrer" 
-                                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                                        href="#"
                                     >
                                         <p>API</p>
                                     </a>
@@ -113,7 +113,7 @@ class Footer extends Component {
                                     <a 
                                         target="_blank"
                                         without rel="noopener noreferrer" 
-                                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                                        href="#"
                                     >
                                         <p>License</p>
                                     </a>
@@ -127,15 +127,15 @@ class Footer extends Component {
                                 <li><a
                                     target="_blank"
                                     without rel="noopener noreferrer" 
-                                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><p>Contact</p></a></li>
+                                    href="#"><p>Contact</p></a></li>
                                 <li><a
                                     target="_blank"
                                     without rel="noopener noreferrer" 
-                                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><p>Status</p></a></li>
+                                    href="#"><p>Status</p></a></li>
                                 <li><a
                                     target="_blank"
                                     without rel="noopener noreferrer" 
-                                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><p>Help</p></a></li>
+                                    href="#"><p>Help</p></a></li>
                             </ul>
                         </div>
                     </div>
