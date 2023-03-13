@@ -66,7 +66,7 @@ class Footer extends Component {
                                     <a 
                                         target="_blank"
                                         without rel="noopener noreferrer"
-                                        href="http://www.sokcodes.com/">
+                                        href="https://www.hiresok.com/">
                                         <p>Portfolio<FontAwesomeIcon className={s.faIcon} icon={faCode} /></p>
                                     </a>
                                 </li>
@@ -104,7 +104,7 @@ class Footer extends Component {
                                     <a
                                         target="_blank"
                                         without rel="noopener noreferrer" 
-                                        href="#"
+                                        href="https://www.hiresok.com/"
                                     >
                                         <p>API</p>
                                     </a>
@@ -113,7 +113,7 @@ class Footer extends Component {
                                     <a 
                                         target="_blank"
                                         without rel="noopener noreferrer" 
-                                        href="#"
+                                        href="https://www.hiresok.com/"
                                     >
                                         <p>License</p>
                                     </a>
@@ -127,15 +127,15 @@ class Footer extends Component {
                                 <li><a
                                     target="_blank"
                                     without rel="noopener noreferrer" 
-                                    href="#"><p>Contact</p></a></li>
+                                    href="https://www.hiresok.com/"><p>Contact</p></a></li>
                                 <li><a
                                     target="_blank"
                                     without rel="noopener noreferrer" 
-                                    href="#"><p>Status</p></a></li>
+                                    href="https://www.hiresok.com/"><p>Status</p></a></li>
                                 <li><a
                                     target="_blank"
                                     without rel="noopener noreferrer" 
-                                    href="#"><p>Help</p></a></li>
+                                    href="https://www.hiresok.com/"><p>Help</p></a></li>
                             </ul>
                         </div>
                     </div>
