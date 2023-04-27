@@ -1,4 +1,4 @@
-# Some Digital Agency
+# Digtal Agencies Be Like 
 
 A satirical webpage that represents many digital agency websites that are prevalent across the tech industy. This project was built with React, Flexbox, and Sass.
 
